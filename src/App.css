@@ -1,0 +1,134 @@
+body{
+  background-color: #171717;
+}
+
+
+/* SwipePage */
+.card-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #161414 40%, rgba(58, 58, 58, 0.00) 60%);
+
+}
+.gradiant {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #161414 40%, rgba(58, 58, 58, 0.00) 60%);
+  z-index: 5;
+}
+.card {
+  height: 462px;
+  left: 0;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: lightgray 50% / cover no-repeat;
+
+  /* Tilføj gradient fra bunden af skærmen */
+  background: linear-gradient(to top, #161414, rgba(22, 20, 20, 0.6) 60%), lightgray 50% / cover no-repeat;
+ 
+}
+
+
+.swipe{
+  position: absolute;
+}
+
+.card > h2 {
+  -webkit-text-stroke: 1px #000000;
+  color: #fbff4d;
+  font-family: "Racing Sans One-Regular", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: fixed;
+}
+.tinder-header{
+  position: absolute;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.header-icon{
+  padding: 20px;
+}
+
+.bottomButtons{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 20px;
+}
+
+.bottomButtons .no {
+  padding: 3vw ;
+  color: rgb(255, 60, 60);
+  border: solid 2px rgb(255, 60, 60) ;
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.3);
+}
+
+.bottomButtons .yes {
+  padding: 3vw ;
+  color: rgb(80, 255, 36);
+  border: solid 2px rgb(80, 255, 36) ;
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Add these styles for the modal */
+.modalBox {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  width: 100vw;
+}
+
+.modalBanner {
+  background-color: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+  width: 100%;
+  padding: 20px; /* Adjust as needed */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalTitel {
+  color: #FFD700; /* Yellow color */
+  font-size: 2em; /* Adjust as needed */
+  font-family: 'Arial', sans-serif; /* Use a suitable font-family */
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.matchKnap {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Black color */
+  font-size: 1.2em; /* Adjust as needed */
+}
+
+.header-icons {
+  width: 1.59375rem;
+height: 0rem;
+flex-shrink: 0;
+  stroke-width: 3px;
+stroke: #FFF;
+z-index: 2;
+}
